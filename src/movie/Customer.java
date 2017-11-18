@@ -1,3 +1,5 @@
+package movie;
+
 import java.util.Enumeration;
 import java.util.Vector;
 
@@ -26,7 +28,7 @@ public class Customer {
 
 
             //show figures for this rental
-            result += "\t" + each.getMovie().getPriceCode() + "\t" + String.valueOf(each.getCharge()) + "\n";
+            result += "\t" + each.getMovie().getPrice().getPriceCode() + "\t" + String.valueOf(each.getCharge()) + "\n";
         }
 
         //add footer lines

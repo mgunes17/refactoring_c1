@@ -1,3 +1,7 @@
+package movie;
+
+import movie.Movie;
+
 public class Rental {
     private Movie movie;
     private int daysRented;

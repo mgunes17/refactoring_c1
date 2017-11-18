@@ -52,7 +52,7 @@ public class Customer {
 
         result += "On this rental you earned <EM>" + String.valueOf(
                     getTotalFrequentRenterPoints()) + "</EM> frequent renter points<P>";
-        
+
         return result;
     }
 

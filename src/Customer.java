@@ -25,10 +25,7 @@ public class Customer {
         String result = "REntal record for " + getName() + "\n";
 
         while(eRentals.hasMoreElements()) {
-            double thisAmount = 0;
             Rental each = (Rental) eRentals.nextElement();
-
-            thisAmount = each.getCharge();
 
             frequentRenterPoints++;
 
@@ -37,8 +34,8 @@ public class Customer {
                     each.getDaysRented() > 1) frequentRenterPoints++;
 
             //show figures for this rental
-            result += "\t" + each.getMovie().getPriceCode() + "\t" + String.valueOf(thisAmount) + "\n";
-            totalAmount += totalAmount;
+            result += "\t" + each.getMovie().getPriceCode() + "\t" + String.valueOf(each.getCharge()) + "\n";
+            totalAmount += each.getCharge();
         }
 
         //add footer lines
